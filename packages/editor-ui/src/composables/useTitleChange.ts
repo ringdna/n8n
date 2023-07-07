@@ -9,11 +9,11 @@ export function useTitleChange() {
 			icon = '▶️';
 		}
 
-		window.document.title = `n8n - ${icon} ${workflow}`;
+		window.document.title = `Revenue.io - ${icon} ${workflow}`;
 	};
 
 	const titleReset = () => {
-		window.document.title = 'n8n - Workflow Automation';
+		window.document.title = 'Revenue.io - Workflow Automation';
 	};
 
 	return {
