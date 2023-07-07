@@ -19,7 +19,7 @@
 			<template #header>
 				<div :class="$style.logo">
 					<img
-						:src="basePath + (isCollapsed ? 'n8n-logo-collapsed.svg' : 'n8n-logo-expanded.svg')"
+						:src="basePath + (isCollapsed ? 'revenue-icon.svg' : 'revenue-logo.svg')"
 						:class="$style.icon"
 						alt="n8n"
 					/>
@@ -509,9 +509,12 @@ export default defineComponent({
 
 	&.sideMenuCollapsed {
 		width: $sidebar-width;
+		.logo {
+			justify-content: center;
 
-		.logo img {
-			left: 0;
+			img {
+				left: 0;
+			}
 		}
 	}
 }
